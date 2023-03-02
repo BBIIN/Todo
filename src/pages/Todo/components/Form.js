@@ -1,4 +1,5 @@
 import { useState } from "react"
+import styled from "styled-components";
 
 function TodoForm({todolist, setTodoList}){
 
@@ -22,11 +23,35 @@ function TodoForm({todolist, setTodoList}){
     }
 
     return (
-        <div>
+        <S.Wrapper>
             <input placeholder="할 일을 작성하세요" value={todo} onChange={onChangeTodo}/>
             <button onClick={onAddTodoList}>+</button>
-        </div>
+        </S.Wrapper>
         )
 }
 
 export default TodoForm
+
+const Wrapper = styled.div`
+
+    & input {
+        width: 300px;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid #000;
+        outline: none;
+        font-size: 16px;
+    }
+    
+
+    & button {
+        background: none;
+        font-size: 24px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+`
+
+const S = {
+    Wrapper
+}

@@ -4,6 +4,7 @@ import { flexCenter } from "../../styles/common";
 import TodoForm from "./components/Form";
 import TodoTitle from "./components/Title";
 import TodoList from "./components/todoList";
+import '../../styles/font/index.css'
 
 function Todo(){
 
@@ -22,14 +23,12 @@ function Todo(){
 export default Todo;
 
 const Wrapper = styled.div`
-        
         ${flexCenter};
         height: 100vh;
         & > div {
             
             text-align: center;
-            border: 1px solid #000;
-            width: 300px;
+            width: 450px;
             height: 500px;
         }
 `

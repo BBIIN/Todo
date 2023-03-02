@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Todo from "./todo/todo"
+import '../../../styles/font/index.css'
 
 function TodoList({todoList, setTodoList}){
 
@@ -12,7 +13,7 @@ function TodoList({todoList, setTodoList}){
     const editTodoList = (id, todo) => {
         const newTodo = [...todoList];
         const selectTodo = newTodo.find((todo) => todo.id === id)
-        selectTodo.todo = todo
+        selectTodo.todo = todo;
         setTodoList(newTodo)
     }
 
@@ -29,10 +30,13 @@ function TodoList({todoList, setTodoList}){
 export default TodoList
 
 const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    line-height: 35px;
+    width: 430px;
+    height: 450px;
+    font-family: 'Regular';
+    font-size: 18px;
+    overflow-y:auto;
+    margin-bottom: 25px;
 `
 
 

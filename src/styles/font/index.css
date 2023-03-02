@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Bold';
+    src: url('TMONEYROUNDWINDEXTRABOLD.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url('TMONEYROUNDWINDREGULAR.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Regular';
+}

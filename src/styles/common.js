@@ -25,3 +25,4 @@ export const title = css`
   line-height: 16px;
   font-weight: bold;
 `;
+
